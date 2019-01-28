@@ -76,11 +76,15 @@ body{
 
 .topbar img{
   height:30px;
-  margin-top: 10px;
+  margin-top: 20px;
+  padding-left: 0;
 }
 
 .topbar .left>*{
   float:left;
+}
+
+.topbar .left .item{
   padding-left: 15px;
   font-size: 15px;
 }
@@ -109,4 +113,28 @@ body{
   padding:10px;
   margin:20px 10px;
   line-height: 100%;
+}
+
+.navbar{
+  background-color: #fff;
+  height:13vh;
+  color: #33475b;
+  font-weight: bold;
+  line-height: 15vh;
+}
+
+.navbar img{
+  margin-top:20px;
+}
+
+.navbar.right{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.menu-item{
+  float:left;
+  margin: 0 20px;
+  font-size: 15px;
 }
