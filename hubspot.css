@@ -8,7 +8,7 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
-.topbar{
+.toolbar{
   background-color: #33475b;
   height:10vh;
   border-top: 2px solid orange;
@@ -28,31 +28,85 @@ body{
   display: table;
 }
 
-.topbar .left{
+.left{
   float:left;
   clear: both;
   content: "";
   display: table;
 }
 
-.topbar .right{
+.right{
   float:right;
 }
 
-.topbar .left>*{
+.toolbar .left>*{
   float:left;
 }
 
-.topbar-item{
+.toolbar-item{
   line-height: 10vh;
   padding: 0 15px;
 }
 
-.topbar img{
+.toolbar img{
   height:40px;
   margin-top: 10px;
 }
 
 #right-first{
   border-right: 1px solid white;
+}
+
+.container{
+  width:70vw;
+  color:black;
+  margin:auto;
+  clear:both;
+  content: "";
+  display: table;
+}
+
+.topbar{
+  background-color: #f5f8fa;
+  border-bottom: 1px solid #cbd6e2;
+  height: 12vh;
+  position: sticky;
+  line-height: 12vh;
+}
+
+.topbar img{
+  height:30px;
+  margin-top: 10px;
+}
+
+.topbar .left>*{
+  float:left;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.topbar .right>*{
+  float:left;
+}
+
+#login{
+  color:#ff7a59;
+  border: 1px solid #ff7a59;
+  background-color: white;
+  border-radius: 0.1875rem;
+  text-align: center;
+  padding:10px;
+  margin:20px;
+  line-height: 100%;
+}
+
+#gets{
+  color:#fff;
+  border: 1px solid #ff7a59;
+  background-color:#ff7a59;
+  border-radius: 0.1875rem;
+  text-align: center;
+  padding:10px;
+  margin:20px 10px;
+  line-height: 100%;
 }
