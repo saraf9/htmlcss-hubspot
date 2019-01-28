@@ -1,0 +1,58 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.topbar{
+  background-color: #33475b;
+  height:10vh;
+  border-top: 2px solid orange;
+  color:white;
+  margin: auto;
+  font-size: 13px;
+}
+
+.container-tb{
+  width:90vw;
+  margin:auto;
+}
+
+.container-tb:after{
+  clear:both;
+  content: "";
+  display: table;
+}
+
+.topbar .left{
+  float:left;
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.topbar .right{
+  float:right;
+}
+
+.topbar .left>*{
+  float:left;
+}
+
+.topbar-item{
+  line-height: 10vh;
+  padding: 0 15px;
+}
+
+.topbar img{
+  height:40px;
+  margin-top: 10px;
+}
+
+#right-first{
+  border-right: 1px solid white;
+}
