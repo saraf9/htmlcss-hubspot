@@ -72,6 +72,7 @@ body{
   height: 12vh;
   position: sticky;
   top: 0;
+  z-index: 10;
   line-height: 12vh;
 }
 
@@ -118,10 +119,10 @@ body{
 
 .navbar{
   background-color: #fff;
-  height:13vh;
   color: #33475b;
+  height:82px;
   font-weight: bold;
-  line-height: 15vh;
+  line-height: 82px;
 }
 
 .navbar img{
@@ -141,7 +142,10 @@ body{
 }
 
 .blu-section{
-  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  background-image: url(https://files.slack.com/files-pri/T91QPE3BP-FFRLBQY59/hero1.png);
+  background-size: cover;
+  background-position: center;
+  height:110vh;
 }
 
 .text#growsec{
@@ -149,16 +153,14 @@ body{
   float:left;
   color:white;
   height: 100%;
+  margin: 50px 0;
 }
 
 .text#growsec>h1{
   font-size: 3.4375rem;
   line-height: 1.1818;
   font-weight:bold;
-  margin-top: 50px;
-  margin-right: 0px;
-  margin-bottom: 0.5em;
-  margin-left: 0px
+
 }
 
 .text#growsec>.main-paragraph{
@@ -187,5 +189,37 @@ body{
   margin: 2em 2em 2em 0;
 }
 
+.big-section{
+  border-top: 3px solid #33475b;
+  padding: 100px 0 50px;
+  background: #f5f8fa;
+  color:black;
+}
 
-border-bottom: 2px solid color: #33475b;
+.section-container{
+  width:800px;
+  margin:auto;
+}
+
+.row1{
+  text-align: center;
+  color: #33475b;
+}
+
+.row1>img{
+  width:260px;
+  height:194px;
+}
+
+.row1>h2{
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 2rem;
+  line-height: 1.3125;
+  font-weight: 700;
+}
+
+.row1>p{
+  font-size: 1em;
+  margin-top: 1em;
+}
