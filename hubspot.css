@@ -58,7 +58,7 @@ body{
 }
 
 .container{
-  width:70vw;
+  width:1080px;
   color:black;
   margin:auto;
   clear:both;
@@ -160,7 +160,6 @@ body{
   font-size: 3.4375rem;
   line-height: 1.1818;
   font-weight:bold;
-
 }
 
 .text#growsec>.main-paragraph{
@@ -197,13 +196,18 @@ body{
 }
 
 .section-container{
-  width:800px;
+  width:960px;
   margin:auto;
 }
 
 .row1{
   text-align: center;
   color: #33475b;
+  height:316px;
+  width: 800px;
+  margin: auto;
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 
 .row1>img{
@@ -222,4 +226,58 @@ body{
 .row1>p{
   font-size: 1em;
   margin-top: 1em;
+}
+
+.row2{
+  height: 283px;
+  background-color: white;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  padding: 2em;
+  box-shadow: 0 0 11px #eaf0f6;
+  position: relative;
+}
+
+.row2>.left2{
+  text-align: center;
+  float:left;
+  width:40%;
+}
+
+.row2 .right2{
+  float:left;
+  width:50%;
+}
+
+.row2 img{
+  width: 100%;
+  height: 150px;
+}
+
+.learn-more{
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  background-color: #ff7a59;
+  color:white;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.25;
+  border: 0;
+  border-radius:.1875rem;
+}
+
+.right2>h4{
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.3636;
+  margin: 0.5em 0;
+}
+
+.right2>#p1{
+  font-size: 14px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
