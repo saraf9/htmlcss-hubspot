@@ -71,6 +71,7 @@ body{
   border-bottom: 1px solid #cbd6e2;
   height: 12vh;
   position: sticky;
+  top: 0;
   line-height: 12vh;
 }
 
@@ -138,3 +139,53 @@ body{
   margin: 0 20px;
   font-size: 15px;
 }
+
+.blu-section{
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+}
+
+.text#growsec{
+  width:430px;
+  float:left;
+  color:white;
+  height: 100%;
+}
+
+.text#growsec>h1{
+  font-size: 3.4375rem;
+  line-height: 1.1818;
+  font-weight:bold;
+  margin-top: 50px;
+  margin-right: 0px;
+  margin-bottom: 0.5em;
+  margin-left: 0px
+}
+
+.text#growsec>.main-paragraph{
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.text#growsec>a{
+  color: #33475b;
+  font-size: 1rem;
+  padding: 1.625rem 3rem;
+  background-color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.25;
+  border: 0;
+  border-radius: .1875rem;
+  text-decoration: none;
+}
+
+.text#growsec>.footer-paragraph{
+  color: #cbd6e2;
+  width:224px;
+  margin: 2em 2em 2em 0;
+}
+
+
+border-bottom: 2px solid color: #33475b;
