@@ -8,43 +8,45 @@ body{
   font-family: 'Noto Sans', sans-serif;
 }
 
+.container{
+  width:1144px;
+  padding-left:32px;
+  padding-right:32px;
+  margin:auto;
+  clear:both;
+  content: "";
+  display: table;
+}
+
+.clearfix::after{
+  clear:both;
+  content: "";
+  display: table;
+}
+
 .toolbar{
   background-color: #33475b;
-  height:10vh;
+  height:70px;
   border-top: 2px solid orange;
   color:white;
   margin: auto;
   font-size: 13px;
 }
 
-.container-tb{
-  width:1144px;
-  margin:auto;
-}
-
-.container-tb:after{
-  clear:both;
-  content: "";
-  display: table;
-}
-
 .left{
   float:left;
-  clear: both;
-  content: "";
-  display: table;
 }
 
 .right{
   float:right;
 }
 
-.toolbar .left>*{
+.toolbar .left>img,span{
   float:left;
 }
 
 .toolbar-item{
-  line-height: 10vh;
+  line-height: 70px;
   padding: 0 15px;
 }
 
@@ -54,28 +56,17 @@ body{
 }
 
 #right-first{
-  border-right: 1px solid white;
-}
-
-.container{
-  width:1144px;
-  padding-left:32px;
-  padding-right:32px;
-  color:black;
-  margin:auto;
-  clear:both;
-  content: "";
-  display: table;
+  border-right: 1px solid #cbd6e2;
 }
 
 .topbar{
   background-color: #f5f8fa;
   border-bottom: 1px solid #cbd6e2;
-  height: 12vh;
+  height: 80px;
+  line-height: 80px;
+  color: #33475b;
   position: sticky;
-  top: 0;
-  z-index: 10;
-  line-height: 12vh;
+  top:0;
 }
 
 .topbar img{
@@ -84,7 +75,7 @@ body{
   padding-left: 0;
 }
 
-.topbar .left>*{
+.topbar .left>{
   float:left;
 }
 
@@ -131,12 +122,6 @@ body{
   margin-top:20px;
 }
 
-.navbar.right{
-  clear: both;
-  content: "";
-  display: table;
-}
-
 .menu-item{
   float:left;
   margin: 0 20px;
@@ -147,7 +132,7 @@ body{
   background-image: url(https://files.slack.com/files-pri/T91QPE3BP-FFRLBQY59/hero1.png);
   background-size: cover;
   background-position: center;
-  height:110vh;
+  height:1000px;
 }
 
 .text#growsec{
@@ -168,6 +153,7 @@ body{
   font-size: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
+  line-height: 20px;
 }
 
 .buttonfree{
@@ -188,6 +174,7 @@ body{
   color: #cbd6e2;
   width:224px;
   margin: 2em 2em 2em 0;
+  line-height: 15px;
 }
 
 .big-section{
@@ -228,6 +215,7 @@ body{
 .row1>p{
   font-size: 1em;
   margin-top: 1em;
+  line-height: 20px;
 }
 
 .row2{
@@ -238,6 +226,7 @@ body{
   padding: 2em;
   box-shadow: 0 0 11px #eaf0f6;
   position: relative;
+  line-height: 30px;
 }
 
 .row2>.left2{
@@ -271,6 +260,7 @@ body{
   border: 0;
   border-radius:.1875rem;
   margin-top: 10px;
+  margin:auto;
 }
 
 .right2>h4{
@@ -308,9 +298,6 @@ hr{
 }
 
 .row3{
-  clear:both;
-  display: table;
-  content: "";
   margin-bottom: 2em;
   border-radius: 4px;
   width:960px;
@@ -385,7 +372,7 @@ li> i{
   background-image: url("https://files.slack.com/files-pri/T91QPE3BP-FFR1TCG0G/griglia_backgroud.png");
   background-size: cover;
   background-position: center;
-  height:130vh;
+  height:900px;
 }
 
 .green-section{
@@ -421,9 +408,6 @@ li> i{
 }
 
 .table-row1{
-  clear: both;
-  content: "";
-  display: table;
   border-bottom: 1px solid white;
 }
 
@@ -445,8 +429,8 @@ li> i{
 }
 
 .square img{
-height:33px;
-margin-bottom: 20px;
+  height:33px;
+  margin-bottom: 20px;
 }
 
 .square h2{
@@ -471,9 +455,6 @@ margin-bottom: 20px;
 
 .home-consumer-main{
   height:100%;
-  clear: both;
-  content: "";
-  display: table;
   margin:auto;
 }
 
@@ -508,9 +489,6 @@ margin-bottom: 20px;
 }
 
 .hc-row1{
-  clear: both;
-  content: "";
-  display: table;
   width:100%;
   height:50%;
 }
@@ -522,9 +500,6 @@ margin-bottom: 20px;
 }
 
 .hc-row2{
-  clear: both;
-  content: "";
-  display: table;
   width:100%;
   height:50%;
 }
@@ -536,9 +511,6 @@ margin-bottom: 20px;
 
 .start{
   padding:120px 0;
-  clear:both;
-  content:"";
-  display: table;
 }
 
 .start>.left{
@@ -557,6 +529,14 @@ margin-bottom: 20px;
   height:375px;
   background-size: cover;
   border-radius: 50%;
+  position:relative;
+}
+
+.img-wrap>img{
+  position:absolute;
+  bottom:0;
+  transform: translateX(-25%);
+  transform: translateY(+25%);
 }
 
 .start>.left>.buttonfree{
@@ -570,6 +550,7 @@ margin-bottom: 20px;
   font-size: 2rem;
   line-height: 1.3125;
   font-weight: 800;
+  color: #33475b;
 }
 
 .start>.left>#main-p{
@@ -577,20 +558,20 @@ margin-bottom: 20px;
   margin-top: 1em;
   margin-bottom: 1em;
   color: #33475b;
+  text-align: left;
 }
 
 .start>.left>p{
   color: #516f90;
   font-size: 0.75rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   max-width: 525px;
   margin: 2em auto;
 }
 
 footer{
   background-color: #33475b;
-  height:655px;
 }
 
 .foot-contain{
@@ -598,15 +579,7 @@ footer{
 }
 
 .foot-row{
-  height:250px;
   margin-bottom: 30px;
-}
-
-.foot-row>.list .help .social{
-  clear: both;
-  content: "";
-  display: table;
-  width:100%;
 }
 
 .foot-row.list>.column{
@@ -630,10 +603,10 @@ footer{
   list-style: none;
 }
 
-.but-help , .social {
+.but-help{
   width:25%;
   float:right;
-  height:40px;
+  height:30px;
 }
 
 #contact{
@@ -650,4 +623,77 @@ footer{
   width:246px;
 }
 
-.foot-row
+.foot-contain>*{
+  padding:10px;
+}
+
+.social>.symbols>*{
+  color: #cbd6e2;
+  padding: 0.75rem 10px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.symbols{
+  float:right;
+  padding-right: 70px;
+}
+
+.language{
+  margin: auto;
+  text-align: center;
+  padding:32px;
+  border-bottom: 1px solid #cbd6e2;
+}
+
+.language>span{
+  padding: 2rem 2rem;
+  color: #cbd6e2;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.copyright{
+  padding:2rem 0;
+}
+
+.left-ft{
+  float:left;
+}
+
+.right-ft{
+  float:right;
+}
+.right-ft>a{
+  color:#cbd6e2;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.copyright img{
+  display: block;
+  max-width: 100px;
+  margin:0;
+}
+
+.copyright p{
+  color: #cbd6e2;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding-top:10px;
+}
+
+.comments{
+  height:60px;
+  width: 60px;
+  background-color: rgb(66, 91, 118);
+  font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position:fixed;
+  bottom: 10px;
+  right: 10px;
+}
