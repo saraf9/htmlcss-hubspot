@@ -58,7 +58,7 @@ body{
 }
 
 .container{
-  width:1144px;
+  width:1080px;
   color:black;
   margin:auto;
   clear:both;
@@ -168,7 +168,7 @@ body{
   margin-bottom: 1em;
 }
 
-.text#growsec>a{
+.buttonfree{
   color: #33475b;
   font-size: 1rem;
   padding: 1.625rem 3rem;
@@ -469,10 +469,10 @@ margin-bottom: 20px;
 
 .home-consumer-main{
   height:100%;
-  width:1080px;
   clear: both;
   content: "";
   display: table;
+  margin:auto;
 }
 
 .home-consumer-main>.left-hcm{
@@ -530,4 +530,58 @@ margin-bottom: 20px;
 #rand{
   height:27.61px;
   width:110px;
+}
+
+.start{
+  padding:120px 0;
+  clear:both;
+  content:"";
+  display: table;
+}
+
+.start>.left{
+  float:left;
+  width: 486px;
+}
+
+.start>.right{
+  float:right;
+}
+
+.start>.right>.img-wrap{
+  background-color: #f2547d;
+  background-image: url("https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/CTA_Card_profile_1@2x.png");
+  width:375px;
+  height:375px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.start>.left>.buttonfree{
+  color:#fff;
+  border: 1px solid #ff7a59;
+  background-color:#ff7a59;
+}
+
+.start>.left>h2{
+  margin: 0 0 1.25rem;
+  font-size: 2rem;
+  line-height: 1.3125;
+  font-weight: 800;
+}
+
+.start>.left>#main-p{
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #33475b;
+}
+
+.start>.left>p{
+  color: #516f90;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 525px;
+  margin: 2em auto;
 }
